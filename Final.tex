@@ -14,18 +14,99 @@
 \begin{document}
 \maketitle
 
-\section*{Prelab}
+\section*{Executive Summary}
+
+In this lab, we explored the tunable ring oscillator.  We constructed a three-inverter ring oscillator that we made tunable by wrapping one inverter in a current starver.  We simulated the same circuit and compared the simulated results to the experimental data.
+
+\subsection*{Ideal Ring Oscillator Operation}
+
+The ring oscillator, at its core, is an odd-number of inverters connected in a circle.  Using logic gates, this can be expressed quite simply in Figure \ref{simpleSchem}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{simpleSchem.png}
+\caption{A logic gate representation of a simple ring oscillator.}
+\label{simpleSchem}
+\end{figure}
+
+Assuming an ideal inverter with a propagation delay (i.e., that there is a transistion period, but the output is never between 0 and 1), this circuit would produce square waves as each inverter continuously transistions from a 1 to a 0 state.  This is only an approximation for the reality of this situation, and the real circuit produces a waveform with curvature.
+
+\subsection*{Simulation}
+
 Talk about mathematical analysis, ``turn on power'' analysis, time constants, in general what the starver does, etc.\\
-Talk about simulation results #yolo\\
+Talk about simulation results yolo\\
 mention the many everyday application sof a ring oscillator
 
 \section{Results}
+
+We built the circuit and used an oscilloscope to view the oscillations.  We used 6 different bias voltages for the current starver to see how that affects the frequency of oscillation and measured the voltage on each branch of the circuit.
+
+\subsection*{Time-Domain Analysis}
+
+\subsubsection*{Large Bias Voltages}
+
+If we apply a large bias voltage, 5V, to the current starver, we see that the three branches of the oscillator exhibit very similar waveforms.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{large_bias.eps}
+\caption{}
+\label{largeBias}
+\end{figure}
+
+The three branches all almost reach the rail.  The current starved branch, branch 2, is limited in its current, so its output is not able to reach a strong 0 or a strong 1.  The weak 1 or 0 being passed to the next branch, branch 3, is amplified to almost a strong 1 or strong 0, but, again, it does not quite reach that level.  That almost-strong 0 or 1 is able to get amplified closer to a strong bit when that gets passed to the third inverter, so it has the largest magnitude.
+
+\subsubsection*{Small Bias Voltage}
+
+If, instead, we apply a small bias voltage, .75V, to the bias transistor, we see that the system behaves very differently.  We chose .75V because it is close to that transistor's turn-on voltage (moderate inversion), and dropping below that point limited the current so severely that we were unable to see any waveforms on the oscilloscope.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{small_bias.eps}
+\caption{}
+\label{smallBias}
+\end{figure}
+
+This small bias voltage creates a remarkably different situation.  We see that the current-starved branch, branch 2, only oscillates very slightly and very linearly.  This is because its current is so small that the RC circuit between the branches does not saturate before the inverter's input reverses its direction.  This small change in voltage, though, gets amplified by the next inverter, which turns it into a larger current and a larger output voltage, which in turn creates an even-larger output voltage in the next inverter.
+
+\subsubsection*{In-between Bias Voltage}
+
+Unsurprisingly, applying a moderate voltage, 1V, such that the transistor is in strong inversion, produces results in between the strong and weak case.  The output voltage of the current-starved branch is small, and the output voltage quickly increases to close to the rail.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{moderate_bias.eps}
+\caption{}
+\label{moderateBias}
+\end{figure}
+
+\subsection*{Frequency Domain Analysis}
+
+At the heart of this project was the desire to make a tunable oscillator. As a result, being able to change the frequency by tweaking a voltage is interesting.  We saw above that tuning the bias voltage changes the shape of the waves and their amplitudes, but, more importantly, it changes their frequency as well (since the RC circuits take longer to charge).  This can be seen visually in Figure \ref{branch}, where the increasing bias voltages causes the resulting waves to increase in frequency.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{b1_out.eps}
+\caption{}
+\label{branch}
+\end{figure}
+
+We used \texttt{MATLAB} to calculate the frequency of these waves as a function of input voltage.  We found that each branch had nearly identical measured voltage for a given bias voltage, which makes sense given how each branch depends on every other.  This can be seen in Figure \ref{freqs}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.5]{freqs.eps}
+\caption{}
+\label{freqs}
+\end{figure}
+
 talk about plots. maybe fit a theoretical to them.
 plots:\\
 signal for several bias voltages (same plot?)\\
 signal for different branches\\
 comparison to simulation results\\
 frequency as a function of bias voltage\
+
 \section{Postlab}
 talk about stuff we didn't expect. why was one branch different? why do we exist? why driving a speaker doesn't make sense. Applications of our work.
 
