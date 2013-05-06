@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.23)  6 MAY 2013 13:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.23)  6 MAY 2013 16:01
 entering extended mode
 **C:/Users/Theo/Documents/GitHub/CircuitsFinal/Final.tex
 (C:/Users/Theo/Documents/GitHub/CircuitsFinal/Final.tex
@@ -486,6 +486,20 @@ LaTeX Font Info:    ... okay on input line 14.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+<finalSchem2.png, id=1, 570.63188pt x 569.12625pt>
+File: finalSchem2.png Graphic file (type png)
+ <use finalSchem2.png>
+Package pdftex.def Info: finalSchem2.png used on input line 26.
+(pdftex.def)             Requested size: 285.31525pt x 284.56242pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
+
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Theo/Documents/G
+itHub/CircuitsFinal/finalSchem2.png>]
 Package epstopdf Info: Source file: <lowBiasSigSim.eps>
 (epstopdf)                    date: 2013-05-06 13:25:13
 (epstopdf)                    size: 50306 bytes
@@ -494,23 +508,16 @@ Package epstopdf Info: Source file: <lowBiasSigSim.eps>
 (epstopdf)                    size: 104487 bytes
 (epstopdf)             Command: <epstopdf --outfile=lowBiasSigSim-eps-converted
 -to.pdf lowBiasSigSim.eps>
-(epstopdf)             \includegraphics on input line 26.
+(epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
-<lowBiasSigSim-eps-converted-to.pdf, id=1, 495.8525pt x 413.545pt>
+
+<lowBiasSigSim-eps-converted-to.pdf, id=12, 495.8525pt x 413.545pt>
 File: lowBiasSigSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use lowBiasSigSim-eps-converted-to.pdf>
 Package pdftex.def Info: lowBiasSigSim-eps-converted-to.pdf used on input line 
-26.
-(pdftex.def)             Requested size: 495.85129pt x 413.54398pt.
-
-Overfull \hbox (26.09627pt too wide) in paragraph at lines 26--27
- [][] 
- []
-
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+37.
+(pdftex.def)             Requested size: 347.09438pt x 289.4795pt.
 Package epstopdf Info: Source file: <highBiasSigSim.eps>
 (epstopdf)                    date: 2013-05-06 13:25:14
 (epstopdf)                    size: 99434 bytes
@@ -519,23 +526,18 @@ Package epstopdf Info: Source file: <highBiasSigSim.eps>
 (epstopdf)                    size: 222282 bytes
 (epstopdf)             Command: <epstopdf --outfile=highBiasSigSim-eps-converte
 d-to.pdf highBiasSigSim.eps>
-(epstopdf)             \includegraphics on input line 33.
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<highBiasSigSim-eps-converted-to.pdf, id=10, 495.8525pt x 413.545pt>
+<highBiasSigSim-eps-converted-to.pdf, id=13, 495.8525pt x 413.545pt>
 File: highBiasSigSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use highBiasSigSim-eps-converted-to.pdf>
 Package pdftex.def Info: highBiasSigSim-eps-converted-to.pdf used on input line
- 33.
-(pdftex.def)             Requested size: 495.85129pt x 413.54398pt.
-
-Overfull \hbox (26.09627pt too wide) in paragraph at lines 33--34
- [][] 
- []
-
-[2 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/lowBiasSigSim-eps-converted-to
-.pdf>]
+ 44.
+(pdftex.def)             Requested size: 347.09438pt x 289.4795pt.
+ [2 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/lowBiasSigSim-eps-converted-t
+o.pdf>]
 Package epstopdf Info: Source file: <branch2DiffBiasSim.eps>
 (epstopdf)                    date: 2013-05-06 13:25:15
 (epstopdf)                    size: 144845 bytes
@@ -544,22 +546,18 @@ Package epstopdf Info: Source file: <branch2DiffBiasSim.eps>
 (epstopdf)                    size: 336502 bytes
 (epstopdf)             Command: <epstopdf --outfile=branch2DiffBiasSim-eps-conv
 erted-to.pdf branch2DiffBiasSim.eps>
-(epstopdf)             \includegraphics on input line 40.
+(epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
- <branch2DiffBiasSim-eps-converted-to.pdf, id=18, 497.86pt x 413.545pt>
+
+<branch2DiffBiasSim-eps-converted-to.pdf, id=21, 497.86pt x 413.545pt>
 File: branch2DiffBiasSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use branch2DiffBiasSim-eps-converted-to.pdf>
 Package pdftex.def Info: branch2DiffBiasSim-eps-converted-to.pdf used on input 
-line 40.
-(pdftex.def)             Requested size: 497.85878pt x 413.54398pt.
-
-Overfull \hbox (28.10376pt too wide) in paragraph at lines 40--41
- [][] 
- []
-
-[3 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/highBiasSigSim-eps-converted-t
-o.pdf>]
+line 53.
+(pdftex.def)             Requested size: 348.49962pt x 289.4795pt.
+ [3 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/highBiasSigSim-eps-converted-
+to.pdf>]
 Package epstopdf Info: Source file: <biasFrequenciesSim.eps>
 (epstopdf)                    date: 2013-05-06 13:25:16
 (epstopdf)                    size: 10552 bytes
@@ -568,40 +566,36 @@ Package epstopdf Info: Source file: <biasFrequenciesSim.eps>
 (epstopdf)                    size: 4700 bytes
 (epstopdf)             Command: <epstopdf --outfile=biasFrequenciesSim-eps-conv
 erted-to.pdf biasFrequenciesSim.eps>
-(epstopdf)             \includegraphics on input line 48.
+(epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
 
-<biasFrequenciesSim-eps-converted-to.pdf, id=26, 508.90125pt x 413.545pt>
+<biasFrequenciesSim-eps-converted-to.pdf, id=29, 508.90125pt x 413.545pt>
 File: biasFrequenciesSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use biasFrequenciesSim-eps-converted-to.pdf>
 Package pdftex.def Info: biasFrequenciesSim-eps-converted-to.pdf used on input 
-line 48.
-(pdftex.def)             Requested size: 508.90001pt x 413.54398pt.
-
-Overfull \hbox (39.14499pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-[4 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/branch2DiffBiasSim-eps-convert
-ed-to.pdf>] [5 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/biasFrequenciesSim
--eps-converted-to.pdf>] (C:\Users\Theo\Documents\GitHub\CircuitsFinal\Final.aux
-) ) 
+line 61.
+(pdftex.def)             Requested size: 356.22844pt x 289.4795pt.
+ [4 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/branch2DiffBiasSim-eps-conver
+ted-to.pdf>] [5 <C:/Users/Theo/Documents/GitHub/CircuitsFinal/biasFrequenciesSi
+m-eps-converted-to.pdf>]
+(C:\Users\Theo\Documents\GitHub\CircuitsFinal\Final.aux) ) 
 Here is how much of TeX's memory you used:
- 2917 strings out of 493921
- 39789 string characters out of 3144879
- 103823 words of memory out of 3000000
- 6164 multiletter control sequences out of 15000+200000
+ 2924 strings out of 493921
+ 39900 string characters out of 3144879
+ 105831 words of memory out of 3000000
+ 6169 multiletter control sequences out of 15000+200000
  7954 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,6n,32p,364b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Final.pdf (5 pages, 717047 bytes).
+ 42i,6n,32p,644b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on Final.pdf (5 pages, 732950 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
