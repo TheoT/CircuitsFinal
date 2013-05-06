@@ -1,0 +1,7 @@
+clear all; clc; clf
+
+load Vb_pt75_b1
+plot(.75, findFund(time, V), 'd')
+
+load Vb_1V_b1.mat
+plot(1, findFund(time, V), '
