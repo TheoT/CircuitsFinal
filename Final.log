@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.8.25)  6 MAY 2013 15:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.8.25)  6 MAY 2013 16:22
 entering extended mode
 **C:/Users/Dan/Documents/Circuits/CircuitsFinal/Final.tex
 (C:/Users/Dan/Documents/Circuits/CircuitsFinal/Final.tex
@@ -573,15 +573,20 @@ Package pdftex.def Info: b1_out-eps-converted-to.pdf used on input line 89.
  [4 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/moderate_bias-eps-converted-
 to.pdf>]
 Package epstopdf Info: Source file: <freqs.eps>
-(epstopdf)                    date: 2013-05-06 13:37:55
-(epstopdf)                    size: 12332 bytes
+(epstopdf)                    date: 2013-05-06 16:20:10
+(epstopdf)                    size: 12340 bytes
 (epstopdf)             Output file: <freqs-eps-converted-to.pdf>
 (epstopdf)                    date: 2013-05-06 15:47:20
 (epstopdf)                    size: 4851 bytes
 (epstopdf)             Command: <epstopdf --outfile=freqs-eps-converted-to.pdf 
 freqs.eps>
 (epstopdf)             \includegraphics on input line 98.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=freqs-eps-converted-to.pdf freqs.eps)...executed (
+allowed).
+
+Package epstopdf Info: Result file: <freqs-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-05-06 16:22:37
+(epstopdf)                    size: 4858 bytes.
 
 <freqs-eps-converted-to.pdf, id=39, 487.8225pt x 419.5675pt>
 File: freqs-eps-converted-to.pdf Graphic file (type pdf)
@@ -608,7 +613,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Final.pdf (6 pages, 2521309 bytes).
+Output written on Final.pdf (6 pages, 2521316 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
