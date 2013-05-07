@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.23)  7 MAY 2013 15:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.23)  7 MAY 2013 18:01
 entering extended mode
 **C:/Users/Theo/Documents/GitHub/CircuitsFinal/Final.tex
 (C:/Users/Theo/Documents/GitHub/CircuitsFinal/Final.tex
@@ -509,17 +509,12 @@ Package epstopdf Info: Source file: <lowBiasSigSim.eps>
 (epstopdf)                    date: 2013-05-07 15:47:32
 (epstopdf)                    size: 179614 bytes
 (epstopdf)             Output file: <lowBiasSigSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 13:30:56
-(epstopdf)                    size: 104487 bytes
+(epstopdf)                    date: 2013-05-07 15:49:02
+(epstopdf)                    size: 405224 bytes
 (epstopdf)             Command: <epstopdf --outfile=lowBiasSigSim-eps-converted
 -to.pdf lowBiasSigSim.eps>
 (epstopdf)             \includegraphics on input line 38.
-runsystem(epstopdf --outfile=lowBiasSigSim-eps-converted-to.pdf lowBiasSigSim.e
-ps)...executed (allowed).
-
-Package epstopdf Info: Result file: <lowBiasSigSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-07 15:49:02
-(epstopdf)                    size: 405224 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <lowBiasSigSim-eps-converted-to.pdf, id=12, 495.8525pt x 413.545pt>
 File: lowBiasSigSim-eps-converted-to.pdf Graphic file (type pdf)
@@ -532,17 +527,12 @@ Package epstopdf Info: Source file: <highBiasSigSim.eps>
 (epstopdf)                    date: 2013-05-07 15:47:32
 (epstopdf)                    size: 99434 bytes
 (epstopdf)             Output file: <highBiasSigSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 13:30:56
-(epstopdf)                    size: 222282 bytes
+(epstopdf)                    date: 2013-05-07 15:49:03
+(epstopdf)                    size: 222268 bytes
 (epstopdf)             Command: <epstopdf --outfile=highBiasSigSim-eps-converte
 d-to.pdf highBiasSigSim.eps>
 (epstopdf)             \includegraphics on input line 45.
-runsystem(epstopdf --outfile=highBiasSigSim-eps-converted-to.pdf highBiasSigSim
-.eps)...executed (allowed).
-
-Package epstopdf Info: Result file: <highBiasSigSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-07 15:49:03
-(epstopdf)                    size: 222268 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <highBiasSigSim-eps-converted-to.pdf, id=13, 495.8525pt x 413.545pt>
 File: highBiasSigSim-eps-converted-to.pdf Graphic file (type pdf)
@@ -557,17 +547,12 @@ Package epstopdf Info: Source file: <branch2DiffBiasSim.eps>
 (epstopdf)                    date: 2013-05-07 15:47:33
 (epstopdf)                    size: 156164 bytes
 (epstopdf)             Output file: <branch2DiffBiasSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 13:30:14
-(epstopdf)                    size: 336502 bytes
+(epstopdf)                    date: 2013-05-07 15:49:04
+(epstopdf)                    size: 364971 bytes
 (epstopdf)             Command: <epstopdf --outfile=branch2DiffBiasSim-eps-conv
 erted-to.pdf branch2DiffBiasSim.eps>
 (epstopdf)             \includegraphics on input line 54.
-runsystem(epstopdf --outfile=branch2DiffBiasSim-eps-converted-to.pdf branch2Dif
-fBiasSim.eps)...executed (allowed).
-
-Package epstopdf Info: Result file: <branch2DiffBiasSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-07 15:49:04
-(epstopdf)                    size: 364971 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <branch2DiffBiasSim-eps-converted-to.pdf, id=21, 497.86pt x 413.545pt>
 File: branch2DiffBiasSim-eps-converted-to.pdf Graphic file (type pdf)
@@ -582,17 +567,12 @@ Package epstopdf Info: Source file: <biasFrequenciesSim.eps>
 (epstopdf)                    date: 2013-05-07 15:47:34
 (epstopdf)                    size: 10850 bytes
 (epstopdf)             Output file: <biasFrequenciesSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 13:30:15
-(epstopdf)                    size: 4700 bytes
+(epstopdf)                    date: 2013-05-07 15:49:04
+(epstopdf)                    size: 4753 bytes
 (epstopdf)             Command: <epstopdf --outfile=biasFrequenciesSim-eps-conv
 erted-to.pdf biasFrequenciesSim.eps>
 (epstopdf)             \includegraphics on input line 62.
-runsystem(epstopdf --outfile=biasFrequenciesSim-eps-converted-to.pdf biasFreque
-nciesSim.eps)...executed (allowed).
-
-Package epstopdf Info: Result file: <biasFrequenciesSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-07 15:49:04
-(epstopdf)                    size: 4753 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <biasFrequenciesSim-eps-converted-to.pdf, id=29, 508.90125pt x 413.545pt>
 File: biasFrequenciesSim-eps-converted-to.pdf Graphic file (type pdf)
@@ -612,13 +592,13 @@ Here is how much of TeX's memory you used:
  6169 multiletter control sequences out of 15000+200000
  7954 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,6n,32p,644b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,6n,32p,648b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Final.pdf (5 pages, 1059731 bytes).
+Output written on Final.pdf (5 pages, 1059762 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
