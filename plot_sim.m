@@ -43,30 +43,37 @@ ylabel('Voltage (V)','FontSize',14)
 
 print '-depsc' branch2DiffBiasSim
 
+<<<<<<< HEAD
 
 dataVB75.freq1=findFund(dataVB75.time,dataVB75.b1);
 dataVB75.freq2=findFund(dataVB75.time,dataVB75.b2);
 dataVB75.freq3=findFund(dataVB75.time,dataVB75.b3);
+=======
+figure(4);
+dataVB75.freq1=7.7286e+03;
+dataVB75.freq2=7.7500e+03;
+dataVB75.freq3=7.7286e+03;
+>>>>>>> 916aa5fe7737252211688c401ef1bc1c39cc584d
 
-dataVB1.freq1=findFund(dataVB1.time,dataVB1.b1);
-dataVB1.freq2=findFund(dataVB1.time,dataVB1.b2);
-dataVB1.freq3=findFund(dataVB1.time,dataVB1.b3);
+dataVB1.freq1=1.2572e+04;
+dataVB1.freq2=1.2581e+04;
+dataVB1.freq3=1.2543e+04;
 
-dataVB2.freq1=findFund(dataVB2.time,dataVB2.b1);
-dataVB2.freq2=findFund(dataVB2.time,dataVB2.b2);
-dataVB2.freq3=findFund(dataVB2.time,dataVB2.b3);
+dataVB2.freq1=2.3120e+04;
+dataVB2.freq2=2.3120e+04;
+dataVB2.freq3=2.3133e+04;
 
-dataVB3.freq1=findFund(dataVB3.time,dataVB3.b1);
-dataVB3.freq2=findFund(dataVB3.time,dataVB3.b2);
-dataVB3.freq3=findFund(dataVB3.time,dataVB3.b3);
+dataVB3.freq1=2.3728e+04;
+dataVB3.freq2=2.3728e+04;
+dataVB3.freq3=2.3728e+04;
 
-dataVB4.freq1=findFund(dataVB4.time,dataVB4.b1);
-dataVB4.freq2=findFund(dataVB4.time,dataVB4.b2);
-dataVB4.freq3=findFund(dataVB4.time,dataVB4.b3);
+dataVB4.freq1=2.4152e+04;
+dataVB4.freq2=2.4111e+04;
+dataVB4.freq3=2.4152e+04;
 
-dataVB5.freq1=findFund(dataVB5.time,dataVB5.b1);
-dataVB5.freq2=findFund(dataVB5.time,dataVB5.b2);
-dataVB5.freq3=findFund(dataVB5.time,dataVB5.b3);
+dataVB5.freq1=2.4186e+04;
+dataVB5.freq2=2.4151e+04;
+dataVB5.freq3=2.4192e+04;
 
 vbs=[dataVB75.vb,dataVB1.vb,dataVB2.vb,	dataVB3.vb,	dataVB4.vb,	dataVB5.vb,];
 
@@ -83,6 +90,11 @@ title('Fundamental Frequency of Different Bias Voltages','FontSize',14);
 xlabel('Bias Voltage (V)','FontSize',14);
 ylabel('Frequency (f)','FontSize',14);
 
+<<<<<<< HEAD
 xlim([0 6]);
 
 print '-depsc' biasFrequenciesSim
+=======
+print '-depsc' biasFrequenciesSim
+print '-dpng' biasFrequenciesSim
+>>>>>>> 916aa5fe7737252211688c401ef1bc1c39cc584d

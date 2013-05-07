@@ -1,21 +1,21 @@
 clf; clear all; clc;
 load Vb_pt75_b1
-plot(time, smooth(V, 20), 'r.'); hold on;
+plot(time, smooth(V,50), 'r.'); hold on;
 
 load Vb_1V_b1
-plot(time, smooth(V, 20),  'b.')
+plot(time, smooth(V,50),  'b.')
 
 load Vb_2V_b1
-plot(time, smooth(V, 20),  'k.')
+plot(time, smooth(V,50),  'k.')
 
 load Vb_3V_b1
-plot(time, smooth(V, 20), 'm.')
+plot(time, smooth(V,50), 'm.')
 
 load Vb_4V_b1
-plot(time, smooth(V, 20),  'g.')
+plot(time, smooth(V,50),  'g.')
 
 load Vb_5V_b1
-plot(time, smooth(V, 20),  'c.')
+plot(time, smooth(V,50),  'c.')
 
 xlim([-.15e-4 .15e-4])
 ylim([-1 7])
