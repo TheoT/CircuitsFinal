@@ -31,7 +31,7 @@ The ring oscillator, at its core, is an odd-number of inverters connected in a c
 
 Assuming an ideal inverter with a propagation delay (i.e., that there is a transistion period, but the output is never between 0 and 1), this circuit would produce square waves as each inverter continuously transistions from a 1 to a 0 state and back again.  This is only an approximation for the reality of this situation, and the real circuit produces a waveform with curvature.
 
-We used the circuit in Figure \ref{ring} as the inspiration for our basic ring oscillator.  Without an RC circuit, the circuit transitions from 1 to 0 very quickly, slowed only by the node capacitance of the inverters.  The RC circuit between each inverter slows that transition, so changing that time constant changes the frequency of oscillation.  We chose a 1 nF capacitor and a 1 $k\Omega$ resistor to give us a time constant of 1 $\mu s$, which meant that we could expect our oscillations to happen, at most, at 1 MHz, since it will take $1 \mu s$ for the RC circuit's output will go from ground to a little over 50\% of the rail for the best-case scenario.  In reality, we expect the transition to happen much slower, because the RC circuit's input is not a constant, but a slowly increasing voltage coming from another inverter.  We also found that this choice was a stable time constant, and decreasing the time constant to the audible range caused instability.
+We used the circuit in Figure \ref{ring} as the inspiration for our basic ring oscillator.  If we directly connect the output of an inverter to the input of another one, the circuit transitions from 1 to 0 very quickly, slowed only by the node capacitance of the inverters.  The RC circuit between each inverter slows that transition, so changing that time constant changes the frequency of oscillation.  Other factors - such as the transistors' parameters - also affect this frequency by changing the current response of the circuit.  For our RC circuit, we chose a 1 nF capacitor and a 1 $k\Omega$ resistor to give us a time constant of 1 $\mu s$, which meant that we could expect our oscillations to happen, at most, at 1 MHz, since it will take around $1 \mu s$ for the RC circuit's output will go from 0V to a little over 50\% of the rail for the best-case scenario.  In reality, we expect the transition to happen much slower, because the RC circuit's input is not a constant, but a slowly increasing voltage coming from another inverter. 
 
 \begin{figure}[H]
 \centering
@@ -55,14 +55,14 @@ When the circuit is initially powered on, each of the inverters' inputs are at a
 
 \begin{figure}[H]	
 \centering			
-\includegraphics[scale=.5]{step.eps}
+\includegraphics[scale=.6]{step.eps}
 \caption{Simulated step response of the circuit.}
 \label{step}		
 \end{figure} 	
 
-\subsection*{Simulation}
-
 \section*{Simulation Results}
+
+To get an initial analysis of the circuit, we simulated a ring oscillator using ltSpice. The schematic that we used is shown in figure \ref{schem}. The oscillor consists of 3 inverters, one of which is ``starved'' of current. The bias voltage determines the oscillation frequency by limiting the current to the third inverter. Takes longer to charge the capacitor, which limits the frequency. This current-starved third inverter sets the fundamental frequency of the oscillation. \\
 
 \begin{figure}[H]
 \centering
@@ -70,8 +70,6 @@ When the circuit is initially powered on, each of the inverters' inputs are at a
 \caption{The schematic we used to simulate the oscillator in ltSpice}
 \label{schem}
 \end{figure}
-
-To get an initial analysis of the circuit, we simulated a ring oscillator using ltSpice. The schematic that we used is shown in figure \ref{schem}. The oscillor consists of 3 inverters, one of which is ``starved'' of current. The bias voltage determines the oscillation frequency by limiting the current to the third inverter. Takes longer to charge the capacitor, which limits the frequency. This current-starved third inverter sets the fundamental frequency of the oscillation. \\
 
 The signal from the third inverter is amplified through each stage. This can be seen in figure \ref{lowBiasSigSim}. The bias transistor is in weak-moderate inversion, so it limits the output of the third inverter. The signal is amplified twice, until it is about rail-to-rail on branch 2. Figure \ref{highBiasSigSim} shows that when the bias transistor is in strong inversion, the gain isn't very high. Note that for both cases, the branches are out of phase with each other. This is because as one inverter output is high, the other two are either rising or falling. \\
 
@@ -103,7 +101,7 @@ Figure \ref{branch2DiffBiasSim} shows the differences in frequency between bias 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.7]{biasFrequenciesSim.eps}
-\caption{The output frequency as a function of bias voltage. For a moderately inverted bias transistor, a change in bias voltage results in a large change in frequency.}
+\caption{The output frequency as a function of bias voltage. For a moderately inverted bias transistor, a change in bias voltage results in a large change in frequency, but this effect diminishes for larger bias voltages.}
 \label{biasFrequenciesSim}
 \end{figure}
 
@@ -150,14 +148,14 @@ Unsurprisingly, applying a moderate voltage, 1V, such that the transistor is in 
 \label{moderateBias}
 \end{figure}
 
-\subsection*{Frequency Domain Analysis}
+\subsection*{Frequency Analysis}
 
-At the heart of this project was the desire to make a tunable oscillator. As a result, being able to change the frequency by tweaking a voltage is interesting.  We saw above that tuning the bias voltage changes the shape of the waves and their amplitudes, but, more importantly, it changes their frequency as well (since the RC circuits take longer to charge).  This can be seen visually in Figure \ref{branch}, where the increasing bias voltages causes the resulting waves to increase in frequency.
+At the heart of this project was the desire to make a tunable oscillator. As a result, being able to change the frequency by tweaking a voltage is interesting and useful.  For example, we imagine that many applications required two frequencies to match very precisely, and being able to make small changes to the frequency just by changing the bias voltage could be used to make those frequencies match.  We saw above that tuning the bias voltage changes the shape of the waves and their amplitudes, but, more importantly, it changes their frequency as well (since the RC circuits take longer to charge).  This can be seen visually in Figure \ref{branch}, where the increasing bias voltages causes the resulting waves to increase in frequency.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{b1_out.eps}
-\caption{}
+\caption{A time-domain view of the changing frequencies of the ring oscillator. With increasing bias voltage, the waves shrink together, corresponding to an increase in frequency.}
 \label{branch}
 \end{figure}
 
@@ -166,9 +164,11 @@ We used \texttt{MATLAB} to calculate the frequency of these waves as a function 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.5]{freqs.eps}
-\caption{}
+\caption{The frequency of the ring oscillator depends strongly on bias voltage for voltages near the turn-on voltage of the bias transistor, then shallows out near the rails.}
 \label{freqs}
 \end{figure}
+
+The change in frequency is more pronounced for small bias voltages, and then flattens out as the voltages increase towards the rail.  This is because changes in voltage near the turn-on voltage causes a roughly exponential increase in current, while further from the turn-on voltage, the current increases more slowly (quadratically).  
 
 \section{Comparison}
 
