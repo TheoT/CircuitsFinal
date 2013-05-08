@@ -15,9 +15,9 @@ ylabel('Voltage (V)','FontSize',14)
 print '-depsc' lowBiasSigSim
 
 figure(2);
-plot(dataVB3.time,dataVB3.b1,'.'); hold on;
-plot(dataVB3.time,dataVB3.b2,'k.');
-plot(dataVB3.time,dataVB3.b3,'r.');
+plot(dataVB5.time,dataVB5.b1,'.'); hold on;
+plot(dataVB5.time,dataVB5.b2,'k.');
+plot(dataVB5.time,dataVB5.b3,'r.');
 xlim([1e-4 2e-4]);
 ylim([-1 6]);
 legend('Branch 1', 'Branch 2 (current starved)', 'Branch 3','location','best');
@@ -43,17 +43,11 @@ ylabel('Voltage (V)','FontSize',14)
 
 print '-depsc' branch2DiffBiasSim
 
-<<<<<<< HEAD
 
-dataVB75.freq1=findFund(dataVB75.time,dataVB75.b1);
-dataVB75.freq2=findFund(dataVB75.time,dataVB75.b2);
-dataVB75.freq3=findFund(dataVB75.time,dataVB75.b3);
-=======
 figure(4);
 dataVB75.freq1=7.7286e+03;
 dataVB75.freq2=7.7500e+03;
 dataVB75.freq3=7.7286e+03;
->>>>>>> 916aa5fe7737252211688c401ef1bc1c39cc584d
 
 dataVB1.freq1=1.2572e+04;
 dataVB1.freq2=1.2581e+04;
@@ -90,11 +84,8 @@ title('Fundamental Frequency of Different Bias Voltages','FontSize',14);
 xlabel('Bias Voltage (V)','FontSize',14);
 ylabel('Frequency (f)','FontSize',14);
 
-<<<<<<< HEAD
 xlim([0 6]);
 
 print '-depsc' biasFrequenciesSim
-=======
 print '-depsc' biasFrequenciesSim
 print '-dpng' biasFrequenciesSim
->>>>>>> 916aa5fe7737252211688c401ef1bc1c39cc584d
