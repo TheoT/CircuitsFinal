@@ -109,7 +109,7 @@ Figure \ref{branch2DiffBiasSim} shows the differences in frequency between bias 
 
 \section*{Results}
 
-We built the circuit and used an oscilloscope to view the oscillations.  We used 6 different bias voltages for the current starver to see how that affects the frequency of oscillation and measured the voltage on each branch of the circuit.
+We built the circuit and used an oscilloscope to view the oscillations. Note that all of the waveforms taken with the oscilloscope are shown in phase because the scope automatically centers the waveforms. We used 6 different bias voltages for the current starver to see how that affects the frequency of oscillation and measured the voltage on each branch of the circuit.
 
 \subsection*{Time-Domain Analysis}
 
@@ -172,6 +172,12 @@ We used \texttt{MATLAB} to calculate the frequency of these waves as a function 
 
 The change in frequency is more pronounced for small bias voltages, and then flattens out as the voltages increase towards the rail.  This is because changes in voltage near the turn-on voltage causes a roughly exponential increase in current, while further from the turn-on voltage, the current increases more slowly (quadratically).  
 
-\section{Comparison}
+\section{Conclusion}
 
+We built a reliable ring oscillator that can be used as a simple voltage-controlled oscillator. The frequency of the oscillator can be changed by changing the bias voltage.
+
+\subsection{Reflection}
+We initially wanted to drive a speaker with the output of this oscillator. However, we decided to take the project in a different direction because we realized that adding a voltage buffer and speaker would not add much to our circuits education. Instead, we decided to simulate the oscillator in LTSpice. We gained experience with running transient simulations and taking data.
+
+We feel that a simplified version of this project might be a good lab for during the class. It exposed us to using good oscilloscope practices, and the best way to get data from the scopes. 
 \end{document}
