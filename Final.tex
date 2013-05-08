@@ -29,7 +29,7 @@ The ring oscillator, at its core, is an odd-number of inverters connected in a c
 \label{simpleSchem}
 \end{figure}
 
-Assuming an ideal inverter with a propagation delay (i.e., that there is a transistion period, but the output is never between 0 and 1), this circuit would produce square waves as each inverter continuously transistions from a 1 to a 0 state and back again.  This is only an approximation for the reality of this situation, and the real circuit produces a waveform with curvature.
+Assuming an ideal inverter with a propagation delay (i.e., that there is a transition period, but the output is never between 0 and 1), this circuit would produce square waves as each inverter continuously transitions from a 1 to a 0 state and back again.  This is only an approximation for the reality of this situation, and the real circuit produces a waveform with curvature.
 
 We used the circuit in Figure \ref{ring} as the inspiration for our basic ring oscillator.  The RC circuit between each inverter slows the transitions, so changing that time constant changes the frequency of oscillation.  We chose a 1 nF capacitor and a 1 $k\Omega$ resistor to give us a time constant of 1 $\mu s$, which meant that we could expect our oscillations to happen, at most, at 1 MHz, since it will take $1 \mu s$ for the RC circuit's output will go from ground to a little over 50\% of the rail for the best-case scenario.  In reality, we expect the transition to happen much slower, because the RC circuit's input is not a constant, but a slowly increasing voltage coming from another inverter.  We also found that this was a stable time constant, and decreasing the time constant to the audible range caused instability.
 
