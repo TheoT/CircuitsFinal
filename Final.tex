@@ -16,11 +16,11 @@
 
 \section*{Executive Summary}
 
-In this lab, we explored the tunable ring oscillator.  We constructed a three-inverter ring oscillator that we made tunable by wrapping one inverter in a current starver.  We simulated the same circuit and compared the simulated results to the experimental data.
+For our final project we explored the tunable ring oscillator.  We constructed a three-inverter ring oscillator that we made tunable by wrapping one inverter in a current starver.  We simulated the same circuit and compared the simulated results to the experimental data.
 
 \subsection*{Ring Oscillator Operation}
 
-The ring oscillator, at its core, is an odd-number of inverters connected in a circle.  Using logic gates, this can be expressed quite simply in Figure \ref{simpleSchem}.
+The ring oscillator, at its core, is an odd number of inverters connected in a circle.  Using logic gates, this can be expressed quite simply in Figure \ref{simpleSchem}.
 
 \begin{figure}[H]
 \centering
@@ -40,7 +40,7 @@ We used the circuit in Figure \ref{ring} as the inspiration for our basic ring o
 \label{ring}
 \end{figure}
 
-The next part of the circuit was the current ``starver'', which is essentially a current mirror that limits the current through one inverter to make it transition more slowly. By setting the bias voltage of the starver, one can tune the frequency of the oscillator.  A current starver is in Figure \ref{starver}. 
+The next part of the circuit was the current ``starver'', which is essentially a current mirror that limits the current through one inverter to make it transition more slowly. By setting the bias voltage of the starver, one can tune the frequency of the oscillator.  This slower tranisition makes the next inverter transition more slowly, which makes the next inverter transition at the same rate. As a result, they all stay on the same frequency. A current starver is in Figure \ref{starver}. 
 					
 \begin{figure}[H]	
 \centering			
@@ -62,7 +62,7 @@ When the circuit is initially powered on, each of the inverters' inputs are at a
 
 \section*{Simulation Results}
 
-To get an initial analysis of the circuit, we simulated a ring oscillator using ltSpice. The schematic that we used is shown in figure \ref{schem}. The oscillor consists of 3 inverters, one of which is ``starved'' of current. The bias voltage determines the oscillation frequency by limiting the current to the third inverter. Takes longer to charge the capacitor, which limits the frequency. This current-starved third inverter sets the fundamental frequency of the oscillation. \\
+To get an initial analysis of the circuit, we simulated a ring oscillator using LTSpice. The schematic that we used is shown in Figure \ref{schem}. The oscillor consists of 3 inverters, one of which is ``starved'' of current. The bias voltage determines the oscillation frequency by limiting the current to the third inverter. Takes longer to charge the capacitor, which limits the frequency. This current-starved third inverter sets the fundamental frequency of the oscillation. \\
 
 Note: our convention is that \emph{branch 1}'s output goes into the input of \emph{branch 2}, the current-starved branch, which feeds into \emph{branch 3}.
 
@@ -90,7 +90,7 @@ The signal from the third inverter is amplified through each stage. This can be 
 \label{highBiasSigSim}
 \end{figure}
 
-Figure \ref{branch2DiffBiasSim} shows the differences in frequency between bias voltages. When the bias voltage is in moderate inversion, the current through the third inverter is limited. Any change of bias voltage in this region causes a significant change in frequency. We found the frequency by calculating the period of each signal in MATLAB. We then plotted frequency as a function of bias voltage, which is shown in figure \ref{biasFrequenciesSim}. Note that for strong inversion, the bias voltage has a relatively small effect on the frequency.
+Figure \ref{branch2DiffBiasSim} shows the differences in frequency between bias voltages. When the bias voltage is in moderate inversion, the current through the third inverter is limited. Any change of bias voltage in this region causes a significant change in frequency. We found the frequency by calculating the frequency of each signal in \texttt{MATLAB}. We then plotted frequency as a function of bias voltage, which is shown in figure \ref{biasFrequenciesSim}. Note that for strong inversion, the bias voltage has a relatively small effect on the frequency.
 
 \begin{figure}[H]
 \centering
