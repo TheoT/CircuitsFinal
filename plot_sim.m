@@ -91,8 +91,6 @@ xlim([0 6]);
 print '-depsc' biasFrequenciesSim
 print '-depsc' biasFrequenciesSim
 print '-dpng' biasFrequenciesSim
-<<<<<<< HEAD
-=======
 
 print '-depsc' lowBiasSigSim
 
@@ -108,4 +106,3 @@ xlabel('Time (s)','FontSize',14)
 ylabel('Voltage (V)','FontSize',14)
 
 print '-depsc' step
->>>>>>> ae4ea7861dd020e8b61b9bf9eeb94f8025f2237f
