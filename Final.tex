@@ -133,11 +133,11 @@ If, instead, we apply a small bias voltage, .75V, to the bias transistor, we see
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{small_bias.eps}
-\caption{The current-starved branch barely responds to the oscillations because there is so little current flowing through the circuit.  This gets amplified somewhat in the next branch, and almost fully amplified at the next circuit.}
+\caption{The current-starved branch barely responds to the oscillations because there is so little current flowing through the circuit.  This gets amplified somewhat in the next branch, and almost fully amplified at the next inverter.}
 \label{smallBias}
 \end{figure}
 
-This small bias voltage creates a remarkably different situation.  We see that the current-starved branch, branch 2, only oscillates very slightly and very linearly.  This is because its current is so small that the RC circuit between the branches does not saturate before the inverter's input reverses its direction.  This small change in voltage, though, gets amplified by the next inverter, which turns it into a larger current and a larger output voltage, which in turn creates an even-larger output voltage in the next inverter.
+This small bias voltage creates a remarkably different situation.  We see that the current-starved branch, branch 2, only oscillates very slightly and very linearly.  This is because its current is so small that the RC circuit between the branches does not saturate before the inverter's input reverses its direction, which makes the response look linear.  This small change in voltage, though, gets amplified by the next inverter, which turns it into a larger current and a larger output voltage at the next branch; this is manifested by a fuller oscillation, but with a low amplitude. This, in turn, creates an even-larger output voltage in the next inverter.
 
 \subsubsection*{In-between Bias Voltage}
 
