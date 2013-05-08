@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.8.25)  6 MAY 2013 18:02
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.8.25)  7 MAY 2013 22:34
 entering extended mode
 **C:/Users/Dan/Documents/Circuits/CircuitsFinal/Final.tex
 (C:/Users/Dan/Documents/Circuits/CircuitsFinal/Final.tex
@@ -506,100 +506,142 @@ File: starver.jpg Graphic file (type jpg)
  <use starver.jpg>
 Package pdftex.def Info: starver.jpg used on input line 47.
 (pdftex.def)             Requested size: 125.68925pt x 107.68202pt.
+Package epstopdf Info: Source file: <step.eps>
+(epstopdf)                    date: 2013-05-07 22:31:35
+(epstopdf)                    size: 71384 bytes
+(epstopdf)             Output file: <step-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-05-07 22:30:04
+(epstopdf)                    size: 199808 bytes
+(epstopdf)             Command: <epstopdf --outfile=step-eps-converted-to.pdf s
+tep.eps>
+(epstopdf)             \includegraphics on input line 58.
+runsystem(epstopdf --outfile=step-eps-converted-to.pdf step.eps)...executed (al
+lowed).
 
-<finalSchem2.png, id=14, 570.63188pt x 569.12625pt>
+Package epstopdf Info: Result file: <step-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-05-07 22:34:09
+(epstopdf)                    size: 150508 bytes.
+
+<step-eps-converted-to.pdf, id=14, 492.84125pt x 414.54875pt>
+File: step-eps-converted-to.pdf Graphic file (type pdf)
+
+<use step-eps-converted-to.pdf>
+Package pdftex.def Info: step-eps-converted-to.pdf used on input line 58.
+(pdftex.def)             Requested size: 246.42001pt x 207.27386pt.
+ [2 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/ringOsc.png> <C:/Users/Dan/D
+ocuments/Circuits/CircuitsFinal/starver.jpg>]
+<finalSchem2.png, id=21, 570.63188pt x 569.12625pt>
 File: finalSchem2.png Graphic file (type png)
  <use finalSchem2.png>
-Package pdftex.def Info: finalSchem2.png used on input line 62.
+Package pdftex.def Info: finalSchem2.png used on input line 73.
 (pdftex.def)             Requested size: 285.31525pt x 284.56242pt.
 
-[2 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/ringOsc.png> <C:/Users/Dan/Do
-cuments/Circuits/CircuitsFinal/starver.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+[3 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/step-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 Package epstopdf Info: Source file: <lowBiasSigSim.eps>
-(epstopdf)                    date: 2013-05-06 17:06:40
-(epstopdf)                    size: 50430 bytes
+(epstopdf)                    date: 2013-05-07 22:31:33
+(epstopdf)                    size: 10992 bytes
 (epstopdf)             Output file: <lowBiasSigSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 17:24:39
+(epstopdf)                    date: 2013-05-07 22:30:05
 (epstopdf)                    size: 104640 bytes
 (epstopdf)             Command: <epstopdf --outfile=lowBiasSigSim-eps-converted
 -to.pdf lowBiasSigSim.eps>
-(epstopdf)             \includegraphics on input line 74.
-Package epstopdf Info: Output file is already uptodate.
-<lowBiasSigSim-eps-converted-to.pdf, id=20, 495.8525pt x 414.54875pt>
+(epstopdf)             \includegraphics on input line 85.
+runsystem(epstopdf --outfile=lowBiasSigSim-eps-converted-to.pdf lowBiasSigSim.e
+ps)...executed (allowed).
+
+Package epstopdf Info: Result file: <lowBiasSigSim-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-05-07 22:34:10
+(epstopdf)                    size: 4672 bytes.
+<lowBiasSigSim-eps-converted-to.pdf, id=30, 495.8525pt x 414.54875pt>
 File: lowBiasSigSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use lowBiasSigSim-eps-converted-to.pdf>
 Package pdftex.def Info: lowBiasSigSim-eps-converted-to.pdf used on input line 
-74.
+85.
 (pdftex.def)             Requested size: 347.09438pt x 290.18214pt.
- [3 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/finalSchem2.png>]
+ [4 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/finalSchem2.png>]
 Package epstopdf Info: Source file: <highBiasSigSim.eps>
-(epstopdf)                    date: 2013-05-06 17:06:41
+(epstopdf)                    date: 2013-05-07 22:31:26
 (epstopdf)                    size: 99553 bytes
 (epstopdf)             Output file: <highBiasSigSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 17:24:40
+(epstopdf)                    date: 2013-05-07 22:30:07
 (epstopdf)                    size: 222390 bytes
 (epstopdf)             Command: <epstopdf --outfile=highBiasSigSim-eps-converte
 d-to.pdf highBiasSigSim.eps>
-(epstopdf)             \includegraphics on input line 81.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 92.
+runsystem(epstopdf --outfile=highBiasSigSim-eps-converted-to.pdf highBiasSigSim
+.eps)...executed (allowed).
 
-<highBiasSigSim-eps-converted-to.pdf, id=25, 495.8525pt x 414.54875pt>
+Package epstopdf Info: Result file: <highBiasSigSim-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-05-07 22:34:13
+(epstopdf)                    size: 222390 bytes.
+
+<highBiasSigSim-eps-converted-to.pdf, id=35, 495.8525pt x 414.54875pt>
 File: highBiasSigSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use highBiasSigSim-eps-converted-to.pdf>
 Package pdftex.def Info: highBiasSigSim-eps-converted-to.pdf used on input line
- 81.
+ 92.
 (pdftex.def)             Requested size: 347.09438pt x 290.18214pt.
- [4 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/lowBiasSigSim-eps-converted-
+ [5 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/lowBiasSigSim-eps-converted-
 to.pdf> <C:/Users/Dan/Documents/Circuits/CircuitsFinal/highBiasSigSim-eps-conve
 rted-to.pdf>]
 Package epstopdf Info: Source file: <branch2DiffBiasSim.eps>
-(epstopdf)                    date: 2013-05-06 17:06:41
+(epstopdf)                    date: 2013-05-07 22:31:28
 (epstopdf)                    size: 144964 bytes
 (epstopdf)             Output file: <branch2DiffBiasSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 17:24:41
+(epstopdf)                    date: 2013-05-07 22:30:10
 (epstopdf)                    size: 336655 bytes
 (epstopdf)             Command: <epstopdf --outfile=branch2DiffBiasSim-eps-conv
 erted-to.pdf branch2DiffBiasSim.eps>
-(epstopdf)             \includegraphics on input line 90.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 101.
+runsystem(epstopdf --outfile=branch2DiffBiasSim-eps-converted-to.pdf branch2Dif
+fBiasSim.eps)...executed (allowed).
 
-<branch2DiffBiasSim-eps-converted-to.pdf, id=39, 498.86375pt x 414.54875pt>
+Package epstopdf Info: Result file: <branch2DiffBiasSim-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-05-07 22:34:16
+(epstopdf)                    size: 336655 bytes.
+
+<branch2DiffBiasSim-eps-converted-to.pdf, id=48, 498.86375pt x 414.54875pt>
 File: branch2DiffBiasSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use branch2DiffBiasSim-eps-converted-to.pdf>
 Package pdftex.def Info: branch2DiffBiasSim-eps-converted-to.pdf used on input 
-line 90.
+line 101.
 (pdftex.def)             Requested size: 349.20224pt x 290.18214pt.
 Package epstopdf Info: Source file: <biasFrequenciesSim.eps>
-(epstopdf)                    date: 2013-05-06 17:06:42
+(epstopdf)                    date: 2013-05-07 22:31:31
 (epstopdf)                    size: 10997 bytes
 (epstopdf)             Output file: <biasFrequenciesSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-05-06 17:24:41
+(epstopdf)                    date: 2013-05-07 22:30:11
 (epstopdf)                    size: 4682 bytes
 (epstopdf)             Command: <epstopdf --outfile=biasFrequenciesSim-eps-conv
 erted-to.pdf biasFrequenciesSim.eps>
-(epstopdf)             \includegraphics on input line 98.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 109.
+runsystem(epstopdf --outfile=biasFrequenciesSim-eps-converted-to.pdf biasFreque
+nciesSim.eps)...executed (allowed).
 
-<biasFrequenciesSim-eps-converted-to.pdf, id=40, 495.8525pt x 414.54875pt>
+Package epstopdf Info: Result file: <biasFrequenciesSim-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-05-07 22:34:17
+(epstopdf)                    size: 4682 bytes.
+
+<biasFrequenciesSim-eps-converted-to.pdf, id=49, 495.8525pt x 414.54875pt>
 File: biasFrequenciesSim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use biasFrequenciesSim-eps-converted-to.pdf>
 Package pdftex.def Info: biasFrequenciesSim-eps-converted-to.pdf used on input 
-line 98.
+line 109.
 (pdftex.def)             Requested size: 347.09438pt x 290.18214pt.
- [5 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/branch2DiffBiasSim-eps-conve
+ [6 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/branch2DiffBiasSim-eps-conve
 rted-to.pdf>]
 Package epstopdf Info: Source file: <large_bias.eps>
 (epstopdf)                    date: 2013-05-06 11:54:14
@@ -609,17 +651,17 @@ Package epstopdf Info: Source file: <large_bias.eps>
 (epstopdf)                    size: 490836 bytes
 (epstopdf)             Command: <epstopdf --outfile=large_bias-eps-converted-to
 .pdf large_bias.eps>
-(epstopdf)             \includegraphics on input line 115.
+(epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
 
-<large_bias-eps-converted-to.pdf, id=49, 487.8225pt x 420.57124pt>
+<large_bias-eps-converted-to.pdf, id=58, 487.8225pt x 420.57124pt>
 File: large_bias-eps-converted-to.pdf Graphic file (type pdf)
 
 <use large_bias-eps-converted-to.pdf>
-Package pdftex.def Info: large_bias-eps-converted-to.pdf used on input line 115
+Package pdftex.def Info: large_bias-eps-converted-to.pdf used on input line 126
 .
 (pdftex.def)             Requested size: 292.69576pt x 252.3447pt.
- [6 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/biasFrequenciesSim-eps-conve
+ [7 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/biasFrequenciesSim-eps-conve
 rted-to.pdf>]
 Package epstopdf Info: Source file: <small_bias.eps>
 (epstopdf)                    date: 2013-05-06 12:10:51
@@ -629,17 +671,17 @@ Package epstopdf Info: Source file: <small_bias.eps>
 (epstopdf)                    size: 816289 bytes
 (epstopdf)             Command: <epstopdf --outfile=small_bias-eps-converted-to
 .pdf small_bias.eps>
-(epstopdf)             \includegraphics on input line 128.
+(epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 
-<small_bias-eps-converted-to.pdf, id=58, 486.81876pt x 420.57124pt>
+<small_bias-eps-converted-to.pdf, id=67, 486.81876pt x 420.57124pt>
 File: small_bias-eps-converted-to.pdf Graphic file (type pdf)
 
 <use small_bias-eps-converted-to.pdf>
-Package pdftex.def Info: small_bias-eps-converted-to.pdf used on input line 128
+Package pdftex.def Info: small_bias-eps-converted-to.pdf used on input line 139
 .
 (pdftex.def)             Requested size: 292.0935pt x 252.3447pt.
- [7 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/large_bias-eps-converted-to.
+ [8 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/large_bias-eps-converted-to.
 pdf>]
 Package epstopdf Info: Source file: <moderate_bias.eps>
 (epstopdf)                    date: 2013-05-06 11:53:26
@@ -649,17 +691,17 @@ Package epstopdf Info: Source file: <moderate_bias.eps>
 (epstopdf)                    size: 679722 bytes
 (epstopdf)             Command: <epstopdf --outfile=moderate_bias-eps-converted
 -to.pdf moderate_bias.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
 
-<moderate_bias-eps-converted-to.pdf, id=68, 486.81876pt x 420.57124pt>
+<moderate_bias-eps-converted-to.pdf, id=76, 486.81876pt x 420.57124pt>
 File: moderate_bias-eps-converted-to.pdf Graphic file (type pdf)
 
 <use moderate_bias-eps-converted-to.pdf>
 Package pdftex.def Info: moderate_bias-eps-converted-to.pdf used on input line 
-141.
+152.
 (pdftex.def)             Requested size: 292.0935pt x 252.3447pt.
- [8 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/small_bias-eps-converted-to.
+ [9 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/small_bias-eps-converted-to.
 pdf>]
 Package epstopdf Info: Source file: <b1_out.eps>
 (epstopdf)                    date: 2013-05-06 15:54:04
@@ -669,17 +711,17 @@ Package epstopdf Info: Source file: <b1_out.eps>
 (epstopdf)                    size: 447142 bytes
 (epstopdf)             Command: <epstopdf --outfile=b1_out-eps-converted-to.pdf
  b1_out.eps>
-(epstopdf)             \includegraphics on input line 152.
+(epstopdf)             \includegraphics on input line 163.
 Package epstopdf Info: Output file is already uptodate.
 
-<b1_out-eps-converted-to.pdf, id=77, 494.84875pt x 416.55624pt>
+<b1_out-eps-converted-to.pdf, id=85, 494.84875pt x 416.55624pt>
 File: b1_out-eps-converted-to.pdf Graphic file (type pdf)
 
 <use b1_out-eps-converted-to.pdf>
-Package pdftex.def Info: b1_out-eps-converted-to.pdf used on input line 152.
+Package pdftex.def Info: b1_out-eps-converted-to.pdf used on input line 163.
 (pdftex.def)             Requested size: 296.91154pt x 249.93567pt.
- [9 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/moderate_bias-eps-converted-
-to.pdf>]
+ [10 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/moderate_bias-eps-converted
+-to.pdf>]
 Package epstopdf Info: Source file: <freqs.eps>
 (epstopdf)                    date: 2013-05-06 16:28:09
 (epstopdf)                    size: 12340 bytes
@@ -688,23 +730,23 @@ Package epstopdf Info: Source file: <freqs.eps>
 (epstopdf)                    size: 4858 bytes
 (epstopdf)             Command: <epstopdf --outfile=freqs-eps-converted-to.pdf 
 freqs.eps>
-(epstopdf)             \includegraphics on input line 161.
+(epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
 
-<freqs-eps-converted-to.pdf, id=86, 487.8225pt x 419.5675pt>
+<freqs-eps-converted-to.pdf, id=94, 487.8225pt x 419.5675pt>
 File: freqs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use freqs-eps-converted-to.pdf>
-Package pdftex.def Info: freqs-eps-converted-to.pdf used on input line 161.
+Package pdftex.def Info: freqs-eps-converted-to.pdf used on input line 172.
 (pdftex.def)             Requested size: 243.91064pt x 209.78323pt.
- [10 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/b1_out-eps-converted-to.pdf
+ [11 <C:/Users/Dan/Documents/Circuits/CircuitsFinal/b1_out-eps-converted-to.pdf
 > <C:/Users/Dan/Documents/Circuits/CircuitsFinal/freqs-eps-converted-to.pdf>]
 (C:\Users\Dan\Documents\Circuits\CircuitsFinal\Final.aux) ) 
 Here is how much of TeX's memory you used:
- 2977 strings out of 494045
- 41067 string characters out of 3145975
- 105755 words of memory out of 3000000
- 6209 multiletter control sequences out of 15000+200000
+ 2983 strings out of 494045
+ 41200 string characters out of 3145975
+ 105765 words of memory out of 3000000
+ 6214 multiletter control sequences out of 15000+200000
  9537 words of font info for 35 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  42i,6n,32p,908b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -717,9 +759,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Final.pdf (10 pages, 3367224 bytes).
+Output written on Final.pdf (11 pages, 3417766 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
