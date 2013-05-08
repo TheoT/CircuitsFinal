@@ -27,6 +27,8 @@ ylabel('Voltage (V)','FontSize',14)
 
 print '-depsc' highBiasSigSim
 
+
+
 figure(3);
 plot(dataVB75.time,dataVB75.b2,'b.'); hold on;
 plot(dataVB1.time,dataVB1.b2,'k.');
@@ -89,3 +91,21 @@ xlim([0 6]);
 print '-depsc' biasFrequenciesSim
 print '-depsc' biasFrequenciesSim
 print '-dpng' biasFrequenciesSim
+<<<<<<< HEAD
+=======
+
+print '-depsc' lowBiasSigSim
+
+figure();
+plot(dataVB3.time,dataVB3.b1,'.'); hold on;
+plot(dataVB3.time,dataVB3.b2,'k.');
+plot(dataVB3.time,dataVB3.b3,'r.');
+xlim([0e-4 .75e-4]);
+ylim([-1 6]);
+legend('Branch 1', 'Branch 2', 'Branch 3 (current starved)','location','best');
+title('Simulated Step Response of Circuit','FontSize',14);
+xlabel('Time (s)','FontSize',14)
+ylabel('Voltage (V)','FontSize',14)
+
+print '-depsc' step
+>>>>>>> ae4ea7861dd020e8b61b9bf9eeb94f8025f2237f

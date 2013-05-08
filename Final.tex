@@ -31,7 +31,7 @@ The ring oscillator, at its core, is an odd-number of inverters connected in a c
 
 Assuming an ideal inverter with a propagation delay (i.e., that there is a transition period, but the output is never between 0 and 1), this circuit would produce square waves as each inverter continuously transitions from a 1 to a 0 state and back again.  This is only an approximation for the reality of this situation, and the real circuit produces a waveform with curvature.
 
-We used the circuit in Figure \ref{ring} as the inspiration for our basic ring oscillator.  The RC circuit between each inverter slows the transitions, so changing that time constant changes the frequency of oscillation.  We chose a 1 nF capacitor and a 1 $k\Omega$ resistor to give us a time constant of 1 $\mu s$, which meant that we could expect our oscillations to happen, at most, at 1 MHz, since it will take $1 \mu s$ for the RC circuit's output will go from ground to a little over 50\% of the rail for the best-case scenario.  In reality, we expect the transition to happen much slower, because the RC circuit's input is not a constant, but a slowly increasing voltage coming from another inverter.  We also found that this was a stable time constant, and decreasing the time constant to the audible range caused instability.
+We used the circuit in Figure \ref{ring} as the inspiration for our basic ring oscillator.  Without an RC circuit, the circuit transitions from 1 to 0 very quickly, slowed only by the node capacitance of the inverters.  The RC circuit between each inverter slows that transition, so changing that time constant changes the frequency of oscillation.  We chose a 1 nF capacitor and a 1 $k\Omega$ resistor to give us a time constant of 1 $\mu s$, which meant that we could expect our oscillations to happen, at most, at 1 MHz, since it will take $1 \mu s$ for the RC circuit's output will go from ground to a little over 50\% of the rail for the best-case scenario.  In reality, we expect the transition to happen much slower, because the RC circuit's input is not a constant, but a slowly increasing voltage coming from another inverter.  We also found that this choice was a stable time constant, and decreasing the time constant to the audible range caused instability.
 
 \begin{figure}[H]
 \centering
@@ -41,19 +41,26 @@ We used the circuit in Figure \ref{ring} as the inspiration for our basic ring o
 \end{figure}
 
 The next part of the circuit was the current ``starver'', which is essentially a current mirror that limits the current through one inverter to make it transition more slowly. By setting the bias voltage of the starver, one can tune the frequency of the oscillator.  A current starver is in Figure \ref{starver}. 
-
-\begin{figure}[H]
-\centering
+					
+\begin{figure}[H]	
+\centering			
 \includegraphics[scale=.5]{starver.jpg}
 \caption{The current starver, which wraps one of the inverters to make the circuit tunable. \emph{Image courtesy of Brad Minch.}}
-\label{starver}
-\end{figure} 
+\label{starver}		
+\end{figure} 		
+
+\paragraph{Step Response}
+
+When the circuit is initially powered on, each of the inverters' inputs are at a ``low'' state, since no voltage has yet propagated through the circuit.  Although each inverter has no bias voltage just yet, the source-drain voltages of the nMOS and pMOS transistors allows a very small amount of current to run pass through the inverters' channels. That small current causes the inverter output to have a small non-zero voltage. These, in turn, get amplified by the ring, and slowly these amplified oscillations grow into the full steady-state oscillation states.  These small voltages will initially vary somewhat by random chance, and so some voltages will come to dominate the others.  We saw this in our LTSpice simulation, as shown in Figure \ref{step}.
+
+\begin{figure}[H]	
+\centering			
+\includegraphics[scale=.5]{step.eps}
+\caption{Simulated step response of the circuit.}
+\label{step}		
+\end{figure} 	
 
 \subsection*{Simulation}
-
-Talk about mathematical analysis, ``turn on power'' analysis, time constants, in general what the starver does, etc.\\
-Talk about simulation results yolo\\
-mention the many everyday application sof a ring oscillator
 
 \section*{Simulation Results}
 
@@ -113,7 +120,7 @@ If we apply a large bias voltage, 5V, to the current starver, we see that the th
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{large_bias.eps}
-\caption{}
+\caption{The output of each inverter for a transistor in strong inversion.}
 \label{largeBias}
 \end{figure}
 
@@ -126,7 +133,7 @@ If, instead, we apply a small bias voltage, .75V, to the bias transistor, we see
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{small_bias.eps}
-\caption{}
+\caption{The output of each inverter for a bias transistor in weak inversion.}
 \label{smallBias}
 \end{figure}
 
@@ -139,7 +146,7 @@ Unsurprisingly, applying a moderate voltage, 1V, such that the transistor is in 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{moderate_bias.eps}
-\caption{}
+\caption{The output of each inverter for a bias transistor in moderate inversion.}
 \label{moderateBias}
 \end{figure}
 
@@ -150,7 +157,7 @@ At the heart of this project was the desire to make a tunable oscillator. As a r
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{b1_out.eps}
-\caption{}
+\caption{The output of branch 1 for different bias voltages. This figure shows the different amplitudes and frequencies caused by different currents through branch 2.}
 \label{branch}
 \end{figure}
 
@@ -159,7 +166,7 @@ We used \texttt{MATLAB} to calculate the frequency of these waves as a function 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.5]{freqs.eps}
-\caption{}
+\caption{The calculated frequencies caused by different bias voltages. A small change in the strong inversion region of the bias transistor has a small effect on the oscillator frequency.}
 \label{freqs}
 \end{figure}
 

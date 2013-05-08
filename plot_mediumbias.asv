@@ -1,9 +1,0 @@
-clf; clear all; clc;
-load Vb_1V_b1
-plot(time, smooth(V), 'r.'); hold on
-
-load Vb_1V_b2
-plot(time, smooth(V), 'b.')
-
-load Vb_1V_b3
-plot(time, smooth(V))
