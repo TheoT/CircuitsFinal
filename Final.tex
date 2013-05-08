@@ -56,13 +56,15 @@ When the circuit is initially powered on, each of the inverters' inputs are at a
 \begin{figure}[H]	
 \centering			
 \includegraphics[scale=.6]{step.eps}
-\caption{Simulated step response of the circuit.}
+\caption{Simulated step response of the circuit. After making micro-oscillations for a few cycles, the circuit eventually saturates to a stable oscillation.}
 \label{step}		
 \end{figure} 	
 
 \section*{Simulation Results}
 
 To get an initial analysis of the circuit, we simulated a ring oscillator using ltSpice. The schematic that we used is shown in figure \ref{schem}. The oscillor consists of 3 inverters, one of which is ``starved'' of current. The bias voltage determines the oscillation frequency by limiting the current to the third inverter. Takes longer to charge the capacitor, which limits the frequency. This current-starved third inverter sets the fundamental frequency of the oscillation. \\
+
+Note: our convention is that \emph{branch 1}'s output goes into the input of \emph{branch 2}, the current-starved branch, which feeds into \emph{branch 3}.
 
 \begin{figure}[H]
 \centering
