@@ -16,9 +16,9 @@
 
 \section*{Executive Summary}
 
-For our final project we explored the tunable ring oscillator.  We constructed a three-inverter ring oscillator that we made tunable by wrapping one inverter in a current starver.  We simulated the same circuit and compared the simulated results to the experimental data.
+For our final project we explored the tunable ring oscillator.  We constructed a three-inverter ring oscillator that we made tunable by wrapping one inverter in a current starver.  We also simulated the same circuit and compared the simulated results to the experimental data.
 
-\subsection*{Ring Oscillator Operation}
+\section*{Ring Oscillator Operation}
 
 The ring oscillator, at its core, is an odd number of inverters connected in a circle.  Using logic gates, this can be expressed quite simply in Figure \ref{simpleSchem}.
 
@@ -40,7 +40,7 @@ We used the circuit in Figure \ref{ring} as the inspiration for our basic ring o
 \label{ring}
 \end{figure}
 
-The next part of the circuit was the current ``starver'', which is essentially a current mirror that limits the current through one inverter to make it transition more slowly. By setting the bias voltage of the starver, one can tune the frequency of the oscillator.  This slower tranisition makes the next inverter transition more slowly, which makes the next inverter transition at the same rate. As a result, they all stay on the same frequency. A current starver is in Figure \ref{starver}. 
+The next part of the circuit is the current ``starver'', which is a current mirror that limits the current through one inverter.  Since the current through the inverter causes its output node capacitance to build up charge, changing that current affects the rate of change of its output voltage. By setting the bias voltage of the starver, one can tune the frequency of the oscillator.  A current starver is in Figure \ref{starver}. 
 					
 \begin{figure}[H]	
 \centering			
@@ -51,7 +51,7 @@ The next part of the circuit was the current ``starver'', which is essentially a
 
 \paragraph{Step Response}
 
-When the circuit is initially powered on, each of the inverters' inputs are at a ``low'' state, since no voltage has yet propagated through the circuit.  Although each inverter has no bias voltage just yet, the source-drain voltages of the nMOS and pMOS transistors allows a very small amount of current to run pass through the inverters' channels. That small current causes the inverter output to have a small non-zero voltage. These, in turn, get amplified by the ring, and slowly these amplified oscillations grow into the full steady-state oscillation states.  These small voltages will initially vary somewhat by random chance, and so some voltages will come to dominate the others.  We saw this in our LTSpice simulation, as shown in Figure \ref{step}.
+When the circuit is initially powered on, each of the inverters' inputs are at a ``low'' state, since no voltage has yet propagated through the circuit.  The current-starved branch will quickly build up a voltage at its output node, since the current through it will cause a node voltage.  This will induce an inverted amplified output voltage at the next branch, which will induce an inverted amplified output voltage at the next branch, which will reach the current-starved branch with a small amplitude and cause the current-starved inverter to switch its direction.  These small oscillations will grow with time, eventually reaching their stable maxima.  We saw this in our LTSpice simulation, as shown in Figure \ref{step}.
 
 \begin{figure}[H]	
 \centering			
@@ -172,12 +172,13 @@ We used \texttt{MATLAB} to calculate the frequency of these waves as a function 
 
 The change in frequency is more pronounced for small bias voltages, and then flattens out as the voltages increase towards the rail.  This is because changes in voltage near the turn-on voltage causes a roughly exponential increase in current, while further from the turn-on voltage, the current increases more slowly (quadratically).  
 
-\section{Conclusion}
+\section*{Conclusion}
 
 We built a reliable ring oscillator that can be used as a simple voltage-controlled oscillator. The frequency of the oscillator can be changed by changing the bias voltage.
 
-\subsection{Reflection}
+\subsection*{Reflection}
 We initially wanted to drive a speaker with the output of this oscillator. However, we decided to take the project in a different direction because we realized that adding a voltage buffer and speaker would not add much to our circuits education. Instead, we decided to simulate the oscillator in LTSpice. We gained experience with running transient simulations and taking data.
 
-We feel that a simplified version of this project might be a good lab for during the class. It exposed us to using good oscilloscope practices, and the best way to get data from the scopes. 
+We feel that a simplified version of this project might be a good lab for during the class. It exposed us to using good oscilloscope practices, and the best way to get data from the scopes. Plus, it was interesting to build a circuit with many real-life applications.  We think this might make a good lab immediately following the introduction of the CMOS inverter.
+
 \end{document}
