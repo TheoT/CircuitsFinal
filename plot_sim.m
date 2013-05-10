@@ -92,7 +92,6 @@ print '-depsc' biasFrequenciesSim
 print '-depsc' biasFrequenciesSim
 print '-dpng' biasFrequenciesSim
 
-print '-depsc' lowBiasSigSim
 
 figure();
 plot(dataVB3.time,dataVB3.b1,'.'); hold on;
